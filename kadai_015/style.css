@@ -4,12 +4,9 @@
     text-align: center;
   }
   
-  html {
-    font-size: 16px; /* デフォルトのフォントサイズ */
-  }
-  
-  .decoration {
-    font-size: 20px; /* `.decoration` クラスが適用されたときのフォントサイズ */
+  /* ルート要素のフォントサイズ */
+  root {
+    font-size: 20px; 
   }
   
   /* h1のスタイル設定 */
@@ -34,9 +31,7 @@
     color: skyblue; /*生年月日や趣味、プログラミング用 */
   }
 
-  /* 特定の要素を太字に */
-  #basic p:first-of-type, /* 「侍 太郎」を対象 */
-  #basic p:nth-of-type(2), /* 「1990年1月1日」を対象 */
-  #basic p:nth-of-type(3) { /* 「O型」を対象 */
+  /* id="basic"のdiv内のpを太字に */
+  #basic p {
   font-weight: bold;
 }
