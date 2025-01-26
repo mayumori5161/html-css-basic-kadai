@@ -1,0 +1,37 @@
+  /* bodyのフォント設定 */
+  body {
+    font-family: "Arial", "Meiryo", sans-serif;
+    text-align: center;
+  }
+  
+  /* ルート要素のフォントサイズ */
+  root {
+    font-size: 20px; 
+  }
+  
+  /* h1のスタイル設定 */
+  h1 {
+    font-family: "Josefin Sans", sans-serif;
+    font-size: calc(2 * 1rem);
+    letter-spacing: 1.2em;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    border-bottom: 3px solid rgb(115, 115, 114);
+  }
+  
+  /* h1内の特定文字の色設定 */
+  h1 .blue, .blue {
+    color: skyblue;
+  }
+  h1 .pink, .pink {
+    color: rgb(255, 192, 203);
+  }
+  
+  /* id="basic"のdiv内の特定要素をブルーに */
+  #basic .blue {
+    color: skyblue; /*生年月日や趣味、プログラミング用 */
+  }
+
+  /* id="basic"のdiv内のpを太字に */
+  #basic p {
+  font-weight: bold;
+}
