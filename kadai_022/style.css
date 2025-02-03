@@ -1,0 +1,67 @@
+header {
+    margin-bottom: 20px;
+    background-color: rgb(244, 79, 79);
+    text-align: center;
+}
+h1 {
+    color: rgb(255, 255, 255);
+}
+main {
+    padding: 10px ;
+}
+#parent {
+    display: flex;
+    justify-content: space-around;
+}
+.contents {
+    border:solid 3px rgb(238, 204, 204);
+    flex-basis: 25%;
+    padding: 10px 15px;
+    margin:20px 0;
+    text-align: center;
+}
+h2 {
+    font-size: 25px;
+    border-bottom: solid 3px rgb(236, 122, 122); 
+}
+h2::before{
+    content: "●"; /* h2要素の前に「●」を表示 */
+    color: rgb(239, 111, 139);
+}
+.contents p:nth-of-type(2)::first-letter{ /* 傘の文字（２番目のP要素内のテキストの一番目の文字）を装飾 */
+    font-weight: bold;
+    color: rgb(97, 206, 249);
+}
+.contents img {
+    margin: 10px 0;
+    width: 70%;
+}
+footer {
+    background-color: rgb(244, 79, 79);
+    text-align: center;
+    padding: 10px 0;
+}
+footer a {
+    color: rgb(255, 255, 255); /* 通常時の文字色 */
+}
+  
+footer a:visited {
+    color: rgb(193, 234, 251); /* 訪問済みリンクの文字色 */
+}
+  
+footer a:hover {
+    color: rgb(245, 178, 168); /* マウスオーバー時の文字色 */
+}
+@media screen and (max-width: 768px) {
+    h2 {
+      font-size: 30px; /* h2のフォントサイズ */
+    }
+  
+    p {
+      font-size: 25px; /* pのフォントサイズ */
+    }
+#parent {
+    display: flex;
+    flex-direction: column; /* Flexboxコンテナ内の要素を縦に並べる */
+    }
+}
